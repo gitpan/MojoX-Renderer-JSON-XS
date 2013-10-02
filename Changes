@@ -1,5 +1,9 @@
 Revision history for Perl extension MojoX-Renderer-JSON-XS
 
+0.02 2013-10-02T04:37:59Z
+
+    - a bit of performance improvement
+
 0.01 2013-10-01T12:21:51Z
 
     - original version

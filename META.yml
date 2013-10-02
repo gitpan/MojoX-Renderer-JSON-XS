@@ -27,7 +27,7 @@ no_index:
 provides:
   MojoX::Renderer::JSON::XS:
     file: lib/MojoX/Renderer/JSON/XS.pm
-    version: 0.01
+    version: 0.02
   Mojolicious::Plugin::JSON::XS:
     file: lib/Mojolicious/Plugin/JSON/XS.pm
 requires:
@@ -39,4 +39,4 @@ resources:
   bugtracker: https://github.com/yowcow/MojoX-Renderer-JSON-XS/issues
   homepage: https://github.com/yowcow/MojoX-Renderer-JSON-XS
   repository: git://github.com/yowcow/MojoX-Renderer-JSON-XS.git
-version: 0.01
+version: 0.02

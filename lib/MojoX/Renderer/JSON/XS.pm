@@ -2,15 +2,12 @@ package MojoX::Renderer::JSON::XS;
 use 5.008005;
 use strict;
 use warnings;
-our $VERSION = "0.01";
+our $VERSION = "0.02";
 
 use JSON::XS qw(encode_json);
 
 sub build {
-    sub {
-        my ($renderer, $c, $output, $options) = @_;
-        $$output = encode_json($options->{json});
-    };
+    sub { ${$_[2]} = encode_json($_[3]{json}); };
 }
 
 1;
