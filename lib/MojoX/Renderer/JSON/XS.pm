@@ -1,13 +1,15 @@
 package MojoX::Renderer::JSON::XS;
-use 5.008005;
+use 5.010;
 use strict;
 use warnings;
-our $VERSION = "0.02";
+our $VERSION = "0.03";
 
-use JSON::XS qw(encode_json);
+use JSON::XS;
+
+our $JSON = JSON::XS->new->utf8->convert_blessed;
 
 sub build {
-    sub { ${$_[2]} = encode_json($_[3]{json}); };
+    sub { ${$_[2]} = $JSON->encode($_[3]{json}); };
 }
 
 1;
