@@ -4,12 +4,11 @@ author:
   - 'yowcow <yowcow@cpan.org>'
 build_requires:
   Test::More: 0.98
+  Test::Pretty: 0
 configure_requires:
-  CPAN::Meta: 0
-  CPAN::Meta::Prereqs: 0
   Module::Build: 0.38
 dynamic_config: 0
-generated_by: 'Minilla/v0.11.0, CPAN::Meta::Converter version 2.133380'
+generated_by: 'Minilla/v2.1.1, CPAN::Meta::Converter version 2.133380'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -28,19 +27,19 @@ no_index:
 provides:
   MojoX::Renderer::JSON::XS:
     file: lib/MojoX/Renderer/JSON/XS.pm
-    version: 0.03
+    version: 0.04
   Mojolicious::Plugin::JSON::XS:
     file: lib/Mojolicious/Plugin/JSON/XS.pm
 requires:
   JSON::XS: 0
   Mojolicious: 0
   parent: 0
-  perl: 5.010
+  perl: 5.010001
 resources:
   bugtracker: https://github.com/yowcow/MojoX-Renderer-JSON-XS/issues
   homepage: https://github.com/yowcow/MojoX-Renderer-JSON-XS
   repository: git://github.com/yowcow/MojoX-Renderer-JSON-XS.git
-version: 0.03
+version: 0.04
 x_contributors:
   - 'Stig Palmquist <stig@stig.io>'
   - 'yowcow <yowcow@gmail.com>'
